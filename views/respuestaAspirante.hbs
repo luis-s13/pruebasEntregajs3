@@ -1,0 +1,30 @@
+{{>header}}
+
+<h3>Bienvenido(a) {{nombre}} <small>[Aspirante]</small></h3>
+
+  
+<div class="alert alert-warning" role="alert">
+  Importante: Recuerde que el periodo academico 2019-II comienza el 15 de julio
+</div>
+
+<h3>A continuacion se muestran las acciones a las que tiene acceso</h3><br>
+  <div>
+    <strong>Seleccione el siguiente boton para ver los cursos disponibles</strong>
+    <form action="/BDOfertaAspirante" method="post">
+       <button class="btn btn-info">Oferta</button>
+    </form>
+  <div>
+      <div>
+    <strong>Seleccione el siguiente boton para inscribirse en un curso</strong>
+    <form action="/Inscribirse" method="get ">
+       <button class="btn btn-dark">Inscripción</button>
+    </form>
+  <div>
+
+  <div>
+    <form action="/salir" method="get">
+       <button class="btn btn-secondary">Salir</button>
+    </form>
+  </div>
+
+{{>footer}}
